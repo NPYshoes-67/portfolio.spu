@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[ชื่อ-นามสกุล] — Developer Portfolio</title>
+<meta name="description" content="Portfolio ส่วนตัวของ [ชื่อ-นามสกุล] นักพัฒนาซอฟต์แวร์และเว็บแอปพลิเคชัน">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800&family=IBM+Plex+Sans+Thai:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar-inner container">
+    <a href="#home" class="brand">
+      <span class="brand-bracket">&lt;</span><span class="brand-name">Dev</span><span class="brand-dot">.</span><span class="brand-name2">Portfolio</span><span class="brand-bracket">/&gt;</span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active" data-nav>หน้าแรก</a>
+      <a href="#about" class="nav-link" data-nav>เกี่ยวกับผม</a>
+      <a href="#experience" class="nav-link" data-nav>ประสบการณ์</a>
+      <a href="#education" class="nav-link" data-nav>การศึกษา</a>
+      <a href="#skills" class="nav-link" data-nav>ทักษะ</a>
+      <a href="#activities" class="nav-link" data-nav>กิจกรรม</a>
+      <a href="#contact" class="nav-link" data-nav>ติดต่อ</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-sm btn-outline nav-cta">ติดต่อผม</a>
+
+    <button class="hamburger" id="hamburger" aria-label="เปิดเมนู" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" data-nav>หน้าแรก</a>
+  <a href="#about" data-nav>เกี่ยวกับผม</a>
+  <a href="#experience" data-nav>ประสบการณ์การทำงาน</a>
+  <a href="#education" data-nav>การศึกษา</a>
+  <a href="#skills" data-nav>ทักษะและความสนใจ</a>
+  <a href="#projects" data-nav>ผลงาน</a>
+  <a href="#activities" data-nav>กิจกรรม</a>
+  <a href="#contact" data-nav>ติดต่อ</a>
+</div>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section id="home" class="hero">
+  <div class="container hero-grid">
+
+    <div class="hero-text reveal-up">
+      <p class="eyebrow"><span class="eyebrow-dot"></span>// ประวัติส่วนตัว</p>
+      <h1 class="hero-title">
+        สวัสดีครับ ผมชื่อ<br>
+        <span class="text-gradient">นายกฤษณชัย อุบลทิพย์</span>
+      </h1>
+      <p class="hero-nickname">รู้จักกันในชื่อ <span>"เพชร"</span></p>
+      <p class="hero-role">
+        <span class="type-target" id="typeTarget"></span><span class="type-cursor">|</span>
+      </p>
+      <p class="hero-desc">
+        สวัสดีครับ ผมชื่อ นายกฤษณชัย อุบลทิพย์ ชื่อเล่นว่า เพชร อายุ 23 ปี กำลังศึกษาอยู่ที่ มหาวิทยาลัยศรีปทุมคณะ:เทคโนโลยีสารสนเทศ สาขาวิชา: เทคโนโลยีสารสนเทศและการสื่อสาร
+      </p>
+      <div class="hero-actions">
+        <a href="#about" class="btn btn-primary">Explore My Profile</a>
+        <a href="#contact" class="btn btn-outline">ติดต่อผม</a>
+      </div>
+
+      <div class="hero-meta">
+        <div class="hero-meta-item"><span class="hero-meta-num">03+</span><span class="hero-meta-label">ปีประสบการณ์การเรียนรู้</span></div>
+        <div class="hero-meta-item"><span class="hero-meta-num">--</span><span class="hero-meta-label">โปรเจกต์ที่ทำ</span></div>
+        <div class="hero-meta-item"><span class="hero-meta-num">--</span><span class="hero-meta-label">เทคโนโลยีที่ใช้</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-up delay-1">
+      <div class="code-window">
+        <div class="code-window-bar">
+          <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+          <span class="code-filename">profile.json</span>
+        </div>
+        <pre class="code-body"><code><span class="c-punct">{</span>
+  <span class="c-key">"name"</span><span class="c-punct">:</span> <span class="c-str">"นายกฤษณชัย อุบลทิพย์"</span><span class="c-punct">,</span>
+  <span class="c-key">"nickname"</span><span class="c-punct">:</span> <span class="c-str">"เพชร"</span><span class="c-punct">,</span>
+  <span class="c-key">"role"</span><span class="c-punct">:</span> <span class="c-str">"Full Stack Developer"</span><span class="c-punct">,</span>
+  <span class="c-key">"stack"</span><span class="c-punct">:</span> <span class="c-punct">[</span><span class="c-str">"PHP"</span><span class="c-punct">,</span> <span class="c-str">"Laravel"</span><span class="c-punct">,</span> <span class="c-str">"React"</span><span class="c-punct">]</span><span class="c-punct">,</span>
+  <span class="c-key">"status"</span><span class="c-punct">:</span> <span class="c-str">"open_to_work"</span><span class="c-punct">,</span>
+  <span class="c-key">"available"</span><span class="c-punct">:</span> <span class="c-bool">true</span>
+<span class="c-punct">}</span></code></pre>
+      </div>
+      <div class="avatar-frame">
+        <div class="avatar-placeholder">
+          <span><img src="assets/images/S__84361259.jpg" alt=""></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <a href="#about" class="scroll-indicator" aria-label="เลื่อนลง">
+    <span class="scroll-line"></span>
+    <span class="scroll-text">Scroll</span>
+  </a>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about" class="section">
+  <div class="container">
+    <p class="eyebrow reveal-up">// 02_about-me</p>
+    <h2 class="section-title reveal-up">เกี่ยวกับผม</h2>
+    <p class="section-sub reveal-up">ทำความรู้จักตัวตน แนวคิด และเป้าหมายในสายงานของผมมากขึ้น</p>
+
+    <div class="about-grid">
+      <div class="about-copy reveal-up">
+        <p>
+          ผมชื่อ กฤษณชัย อุบลทิพย์ อายุ 23 ปี ปัจจุบันทำงานราชการ แต่ยังคงสนใจและพัฒนาทักษะด้าน Technology และ Programming อย่างต่อเนื่อง โดยใช้เวลาว่างในการเรียนรู้และทดลองพัฒนาโปรเจกต์ต่าง ๆ เพื่อเพิ่มประสบการณ์และนำความรู้ไปต่อยอดในการทำงาน
+        </p>
+        <p>
+          เป้าหมายของผมคือการพัฒนาตัวเองให้เติบโตในสาย Full Stack Developer มีความสามารถทั้งด้าน Frontend และ Backend และต่อยอดไปสู่ด้าน AI / Data ในอนาคต พร้อมนำความรู้และประสบการณ์ที่ได้มาสร้างซอฟต์แวร์ที่มีประโยชน์และใช้งานได้จริง
+        </p>
+      </div>
+
+      <div class="about-cards reveal-up delay-1">
+        <div class="info-card">
+          <span class="info-icon" aria-hidden="true">01</span>
+          <span class="info-label">ชื่อ</span>
+          <span class="info-value">นายกฤษณชัย อุบลทิพย์</span>
+        </div>
+        <div class="info-card">
+          <span class="info-icon" aria-hidden="true">02</span>
+          <span class="info-label">อายุ</span>
+          <span class="info-value">23 ปี</span>
+        </div>
+        <div class="info-card">
+          <span class="info-icon" aria-hidden="true">03</span>
+          <span class="info-label">การศึกษา</span>
+          <span class="info-value">ปริญญาตรี</span>
+        </div>
+        <div class="info-card">
+          <span class="info-icon" aria-hidden="true">04</span>
+          <span class="info-label">สาขาที่เรียน</span>
+          <span class="info-value">สาขาเทคโนโลยีสารสนเทศและการสื่อสาร</span>
+        </div>
+        <div class="info-card">
+          <span class="info-icon" aria-hidden="true">05</span>
+          <span class="info-label">ความสนใจ</span>
+          <span class="info-value">Web Development, AI</span>
+        </div>
+        <div class="info-card">
+          <span class="info-icon" aria-hidden="true">06</span>
+          <span class="info-label">สถานะ</span>
+          <span class="info-value">เปิดรับโอกาสใหม่ ๆ</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section id="experience" class="section section-alt">
+  <div class="container">
+    <p class="eyebrow reveal-up">// 03_experience</p>
+    <h2 class="section-title reveal-up">ประสบการณ์การทำงาน</h2>
+    <p class="section-sub reveal-up">เส้นทางการทำงานที่ผ่านมา เรียงตามช่วงเวลา</p>
+
+    <div class="git-timeline">
+
+      <div class="git-node reveal-up">
+        <div class="git-node-dot"></div>
+        <div class="git-node-card">
+          <span class="git-node-time">[2024 - 2026]</span>
+          <h3 class="git-node-title">เจ้าพนักงานธุรการ</h3>
+          <p class="git-node-company">สำนักงานพัฒนาระบบบริการทางการแพทย์ สำนักการแพทย์</p>
+          <p class="git-node-desc">จัดซื้อจัดจ้างของหน่วยงาน เขียนระบบจัดการคลังสินค้า</p>
+          <div class="tag-row">
+            <span class="tag">PHP</span><span class="tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+
+     
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="section">
+  <div class="container">
+    <p class="eyebrow reveal-up">// 04_education</p>
+    <h2 class="section-title reveal-up">ประวัติการศึกษา</h2>
+    <p class="section-sub reveal-up">พื้นฐานความรู้และสถาบันที่หล่อหลอมเส้นทางสายเทคโนโลยีของผม</p>
+
+    <div class="git-timeline">
+
+      <div class="git-node reveal-up">
+        <div class="git-node-dot"></div>
+        <div class="git-node-card">
+          <span class="git-node-time">2569</span>
+          <h3 class="git-node-title">ปริญญาตรี</h3>
+          <p class="git-node-company">มหาวิทยาลัยศรีปทุม · สาขาเทคโนโลยีสารสนเทศและการสื่อสาร</p>
+        </div>
+      </div>
+
+      <div class="git-node reveal-up">
+        <div class="git-node-dot"></div>
+        <div class="git-node-card">
+          <span class="git-node-time">2567</span>
+          <h3 class="git-node-title">ปวส. </h3>
+          <p class="git-node-company">วิทยาลัยอาชีวศึกษานครปฐม · สาขาเทคโนโลยีสารสนเทศ </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <p class="eyebrow reveal-up">// 05_skills-and-interests</p>
+    <h2 class="section-title reveal-up">ทักษะและความสนใจ</h2>
+    <p class="section-sub reveal-up">เครื่องมือและเทคโนโลยีที่ผมใช้งาน พร้อมสิ่งที่สนใจศึกษาต่อ</p>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal-up">
+        <h3 class="skill-cat">Programming</h3>
+        <div class="tag-row">
+          <span class="tag">PHP</span><span class="tag">JavaScript</span><span class="tag">HTML</span><span class="tag">CSS</span>
+        </div>
+      </div>
+      <div class="skill-card reveal-up delay-1">
+        <h3 class="skill-cat">Framework</h3>
+        <div class="tag-row">
+          <span class="tag">Laravel</span><span class="tag">React</span><span class="tag">Bootstrap</span>
+        </div>
+      </div>
+      <div class="skill-card reveal-up delay-2">
+        <h3 class="skill-cat">Database</h3>
+        <div class="tag-row">
+          <span class="tag">MySQL</span><span class="tag">MariaDB</span>
+        </div>
+      </div>
+      <div class="skill-card reveal-up">
+        <h3 class="skill-cat">Tools</h3>
+        <div class="tag-row">
+          <span class="tag">VS Code</span><span class="tag">Git</span><span class="tag">GitHub</span>
+        </div>
+      </div>
+      <div class="skill-card reveal-up delay-1">
+        <h3 class="skill-cat">Interests</h3>
+        <div class="tag-row">
+          <span class="tag tag-accent">Artificial Intelligence</span>
+          <span class="tag tag-accent">Web Development</span>
+          <span class="tag tag-accent">UI/UX</span>
+          <span class="tag tag-accent">Database</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ACTIVITIES ============ -->
+<section id="activities" class="section section-alt">
+  <div class="container">
+    <p class="eyebrow reveal-up">// 07_activities</p>
+    <h2 class="section-title reveal-up">กิจกรรมและประสบการณ์</h2>
+    <p class="section-sub reveal-up">
+      ภาพบรรยากาศจากการเรียน การทำงาน การอบรม และประสบการณ์ต่าง ๆ
+      ที่ช่วยพัฒนาทักษะและประสบการณ์ของผม
+    </p>
+
+    <div class="gallery-grid">
+      <button class="gallery-item gallery-tall" data-lightbox
+        data-caption="กิจกรรมและประสบการณ์ระหว่างการศึกษา">
+        <span>
+          <img src="assets/images/S__84361262_0.jpg"
+               alt="กิจกรรมและประสบการณ์ระหว่างการศึกษา">
+        </span>
+      </button>
+
+      <button class="gallery-item" data-lightbox
+        data-caption="การเข้าร่วมกิจกรรมและการเรียนรู้ด้านเทคโนโลยี">
+        <span>
+          <img src="assets/images/S__84361263_0.jpg"
+               alt="กิจกรรมด้านเทคโนโลยี">
+        </span>
+      </button>
+
+      <button class="gallery-item" data-lightbox
+        data-caption="การอบรมและพัฒนาทักษะเพื่อเพิ่มประสบการณ์ในการทำงาน">
+        <span>
+          <img src="assets/images/S__84361264_0.jpg"
+               alt="การอบรมและพัฒนาทักษะ">
+        </span>
+      </button>
+
+      <button class="gallery-item" data-lightbox
+        data-caption="ประสบการณ์จากการทำงานและการทำงานร่วมกับผู้อื่น">
+        <span>
+          <img src="assets/images/S__84361265_0.jpg"
+               alt="ประสบการณ์จากการทำงาน">
+        </span>
+      </button>
+
+      <button class="gallery-item" data-lightbox
+        data-caption="กิจกรรมที่ช่วยพัฒนาทักษะการทำงานและการแก้ไขปัญหา">
+        <span>
+          <img src="assets/images/S__84361266_0.jpg"
+               alt="กิจกรรมพัฒนาทักษะ">
+        </span>
+      </button>
+
+      <button class="gallery-item" data-lightbox
+        data-caption="การเรียนรู้และแลกเปลี่ยนประสบการณ์จากกิจกรรมต่าง ๆ">
+        <span>
+          <img src="assets/images/S__84361267_0.jpg"
+               alt="การเรียนรู้และแลกเปลี่ยนประสบการณ์">
+        </span>
+      </button>
+
+      <button class="gallery-item" data-lightbox
+        data-caption="ประสบการณ์และกิจกรรมที่เป็นส่วนหนึ่งในการพัฒนาตัวเอง">
+        <span>
+          <img src="assets/images/S__84361268_0.jpg"
+               alt="กิจกรรมพัฒนาตัวเอง">
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="ปิด">&times;</button>
+
+  <div class="lightbox-content">
+    <div class="lightbox-image">
+      <img id="lightboxImage" src="" alt="">
+    </div>
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+</div>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section">
+  <div class="container">
+    <p class="eyebrow reveal-up">// 08_contact</p>
+    <h2 class="section-title reveal-up">ติดต่อผม</h2>
+    <p class="section-sub reveal-up">สนใจร่วมงาน หรืออยากพูดคุยเรื่องโปรเจกต์ ติดต่อผมได้ตามช่องทางด้านล่าง</p>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal-up">
+        <a href="mailto:youremail@example.com" class="contact-row">
+          <span class="contact-icon" aria-hidden="true">@</span>
+          <span>
+            <span class="contact-label">Email</span>
+            <span class="contact-value">kritsanachai.ubo@spumail.net</span>
+          </span>
+        </a>
+        <a href="tel:0000000000" class="contact-row">
+          <span class="contact-icon" aria-hidden="true">#</span>
+          <span>
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">092-455-45xx</span>
+          </span>
+        </a>
+        <a href="#" class="contact-row">
+          <span class="contact-icon" aria-hidden="true">&#128205;</span>
+          <span>
+            <span class="contact-label">Location</span>
+            <span class="contact-value">จังหวัดนครปฐม, ประเทศไทย</span>
+          </span>
+        </a>
+
+        <div class="social-row">
+          <a href="#" class="social-btn" aria-label="GitHub">GH</a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">In</a>
+          <a href="#" class="social-btn" aria-label="Facebook">FB</a>
+          <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal-up delay-1" id="contactForm">
+        
+        <div class="form-field">
+          <label for="name">ชื่อ</label>
+          <input type="text" id="name" name="name" placeholder="ชื่อของคุณ" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="ข้อความของคุณ..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+        <p class="form-status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <p class="footer-name">นายกฤษณชัย อุบลทิพย์</p>
+    <p class="footer-copy">&copy; <span id="year"></span> Kritsanachai.ubo. All rights reserved.</p>
+    <div class="social-row">
+      <a href="#" class="social-btn" aria-label="GitHub">GH</a>
+      <a href="#" class="social-btn" aria-label="LinkedIn">In</a>
+      <a href="#" class="social-btn" aria-label="Facebook">FB</a>
+      <a href="#" class="social-btn" aria-label="Instagram">IG</a>
+    </div>
+    <button class="back-to-top" id="backToTop" aria-label="กลับขึ้นด้านบน">&uarr;</button>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImage = document.getElementById("lightboxImage");
+  const lightboxCaption = document.getElementById("lightboxCaption");
+  const lightboxClose = document.getElementById("lightboxClose");
+
+  const galleryItems = document.querySelectorAll("[data-lightbox]");
+
+  // เปิด Lightbox
+  galleryItems.forEach(item => {
+    item.addEventListener("click", () => {
+      const img = item.querySelector("img");
+
+      if (!img) return;
+
+      lightboxImage.src = img.src;
+      lightboxImage.alt = img.alt || "";
+
+      lightboxCaption.textContent =
+        item.getAttribute("data-caption") || "";
+
+      lightbox.classList.add("active");
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  // ปิด Lightbox
+  function closeLightbox() {
+    lightbox.classList.remove("active");
+    document.body.style.overflow = "";
+
+    setTimeout(() => {
+      lightboxImage.src = "";
+    }, 200);
+  }
+
+  lightboxClose.addEventListener("click", closeLightbox);
+
+  // กดพื้นที่ด้านนอกเพื่อปิด
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      closeLightbox();
+    }
+  });
+
+  // กด ESC เพื่อปิด
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && lightbox.classList.contains("active")) {
+      closeLightbox();
+    }
+  });
+});
+</script>
+</body>
+</html>
